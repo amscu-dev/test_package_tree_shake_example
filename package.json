@@ -1,6 +1,6 @@
 {
   "name": "@amscu/test-package-tree-shakeking",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package implements react components based on MUI",
   "type": "module",
   "main": "lib/cjs/index.js",
