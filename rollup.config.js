@@ -24,7 +24,7 @@ export default {
   plugins: [
     del({ targets: ["lib/*"] }),
     resolve(),
-    commonjs(),
+    commonjs(), // convert Commonjs code to ESM code
     typescript({ useTsconfigDeclarationDir: true }),
   ],
   onwarn: (warning, warn) => {
@@ -33,5 +33,5 @@ export default {
     }
     warn(warning);
   },
-  external,
+  external, // ii precizeaza lui rollup sa nu includa peerDeps in bundler ul final
 };
